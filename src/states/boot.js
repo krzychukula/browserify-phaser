@@ -1,5 +1,6 @@
 
-module.exports = {
+module.exports = function Boot(game) {
+  return {
     preload: function(){
       game.load.image('mars', '/assets/images/mars.png');
     },
@@ -14,5 +15,6 @@ module.exports = {
       //Game logic goes here
       this.mars.x += 1;
       this.mars.y += 1;
-    },
+    }
+  }
 };
